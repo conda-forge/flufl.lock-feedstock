@@ -10,7 +10,7 @@ source:
   sha256: a8d66accc9ab41f09961cd8f8db39f9c28e97e2769659a3567c63930a869ff5b
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
   noarch: python
 
@@ -43,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - johanneskoester
+    - efiop
