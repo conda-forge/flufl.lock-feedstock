@@ -28,9 +28,6 @@ test:
   imports:
     - flufl
     - flufl.lock
-    - flufl.lock.docs
-    - flufl.lock.testing
-    - flufl.lock.tests
 
 about:
   home: https://flufllock.readthedocs.io
