@@ -18,10 +18,11 @@ requirements:
   host:
     - atpublic
     - pip
-    - python >=3.0
+    - python >=3.6
   run:
     - atpublic
-    - python >=3.0
+    - psutil
+    - python >=3.6
 
 test:
   imports:
