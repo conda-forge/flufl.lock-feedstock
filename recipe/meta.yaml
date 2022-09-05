@@ -1,5 +1,5 @@
 {% set name = "flufl.lock" %}
-{% set version = "7.1" %}
+{% set version = "7.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 431b7fe8f661299200ff67a538bac937172181c1ed3a6efa6d28934b48b8a12c
+  sha256: af14172b35bbc58687bd06b70d1693fd8d48cbf0ffde7e51a618c148ae24042d
 
 build:
   number: 0
