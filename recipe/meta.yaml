@@ -16,8 +16,7 @@ build:
 
 requirements:
   host:
-    - hatchling
-    - pdm
+    - pdm-backend
     - pip
     - python >=3.8
   run:
