@@ -1,41 +1,44 @@
 {% set name = "flufl.lock" %}
-{% set version = "7.1.1" %}
+{% set version = "8.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: af14172b35bbc58687bd06b70d1693fd8d48cbf0ffde7e51a618c148ae24042d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flufl_lock-{{ version }}.tar.gz
+  sha256: 61c7246b34d6e5544c8a1fa4dae396d10e16ceb23371a31db22e0a2993d01432
 
 build:
   number: 0
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   noarch: python
 
 requirements:
   host:
-    - atpublic
-    - pdm
+    - pdm-backend
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - atpublic
     - psutil
-    - python >=3.6
+    - python >=3.8
 
 test:
   imports:
     - flufl
     - flufl.lock
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://flufllock.readthedocs.io
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: NFS-safe file locking with timeouts for POSIX systems.
+  summary: NFS-safe file locking with timeouts for POSIX and Windows
   doc_url: https://flufllock.readthedocs.io
   dev_url: https://gitlab.com/warsaw/flufl.lock
 
