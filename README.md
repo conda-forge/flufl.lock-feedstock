@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@efiop](https://github.com/efiop/)
 * [@johanneskoester](https://github.com/johanneskoester/)
 
-
-<!-- dummy commit to enable rerendering -->
-
