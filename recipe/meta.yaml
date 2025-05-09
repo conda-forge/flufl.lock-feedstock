@@ -1,13 +1,13 @@
 {% set name = "flufl.lock" %}
-{% set version = "8.1.0" %}
+{% set version = "8.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flufl_lock-{{ version }}.tar.gz
-  sha256: d88302005692a63d98b60080158faf089be5ecae6969f706409da8276fdce7cb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/flufl_lock-{{ version }}.tar.gz
+  sha256: 15b333c35fab1a36b223840057258aeb4cd79f0fbaf82c144f23cdf6cf14d5e3
 
 build:
   number: 0
