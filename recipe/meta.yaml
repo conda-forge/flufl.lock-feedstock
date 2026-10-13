@@ -1,5 +1,5 @@
 {% set name = "flufl.lock" %}
-{% set version = "9.2.0" %}
+{% set version = "10.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/flufl_lock-{{ version }}.tar.gz
-  sha256: 333ffe41bda10bd11e21817e7bb699d5f87dfc56bf036e573f0a7208050c23ae
+  sha256: 4c425ced02827b03ee09a224ac292dde38451e05ec5bf6ddc93c5aa5d55a4267
 
 build:
   number: 0
